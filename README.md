@@ -11,6 +11,7 @@ First Expert CircuitPython assignment; drawing a bouncing ball in Processing.
 https://processing.org/examples/bounce.html
 ### Images
 <img src="Media/Hello_Processing.PNG" width="500">
+
 ### Takeaways
 
 ## Assignment Template
