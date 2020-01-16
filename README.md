@@ -14,11 +14,20 @@ https://processing.org/examples/bounce.html
 
 ### Takeaways
 
-## Assignment Template
-
+## CircuitPython to Processing
+Second Expert CircuitPython assignment; sending potentiometer data to Processing to draw.
 ### Resources
+https://learn.adafruit.com/circuitpython-essentials/circuitpython-uart-serial
+
+https://learn.adafruit.com/make-it-change-potentiometers/circuitpython
+
+https://www.processing.org/examples/clock.html?scrlybrkr=4084e579
+
+https://processing.org/reference/map_.html
 
 ### Images
+<img src="Media/CircuitPython_Processing.png" width="300">
+<img src="Media/Processing_Sketch.png" width="300">
 
 ### Takeaways
 
