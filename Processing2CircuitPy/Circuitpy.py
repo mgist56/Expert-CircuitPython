@@ -14,14 +14,16 @@ uart = busio.UART(board.TX, board.RX, baudrate=9600)
 
 while True:
     data = uart.read(8)
-    # allows uart to read 8 bytes at a time
+    # Allows uart to read 8 bytes at a time
     if data is not None:
         data = data.decode("utf-8")
+        # Decodes the data
         dataArray = data.split(",")
-        # splits the data into two lines
+        # Splits the data into two lines
         servo1.angle = int(dataArray[0])
         print(servo1.angle)
         servo2.angle = int(dataArray[1])
         print(servo2.angle)
-        # values are already in 0 - 180 degrees
+        # Values are already in 0 - 180 degrees
         time.sleep(0.02)
+        # time.sleep should be fast
