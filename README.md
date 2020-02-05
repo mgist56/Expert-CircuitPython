@@ -10,7 +10,7 @@ First Expert CircuitPython assignment; drawing a bouncing ball in Processing.
 ### Resources
 https://processing.org/examples/bounce.html
 ### Images
-<img src="Media/Hello_Processing.PNG" width="500">
+<img src="Media/HelloProcessing.PNG" width="500">
 
 ### Takeaways
 Processing.org is a useful resource, especially the Examples and Reference pages. For this assignment, River and I utilized the Bounce page under the Examples page on Processing. We simply modified the code to fit the specific requirements of the assignment. Lines 34 through 39 change the direction of the ellipse when it makes contact with the side of the window. I decided to make the background an obnoxious shade of fuchsia because I could.
@@ -27,11 +27,36 @@ https://www.processing.org/examples/clock.html?scrlybrkr=4084e579
 https://processing.org/reference/map_.html
 
 ### Images
-<img src="Media/CircuitPython_Processing.png" width="300">
-<img src="Media/Processing_Sketch.png" width="300">
+<img src="Media/CircuitPy2Processing.png" width="300">
+<img src="Media/CircuitPy2ProcessingClock.png" width="300">
 
 ### Takeaways
 In this assignment, we modified the Clock code from the Example page of Processing. We removed two of the clock hands and changed the time-keeping aspect of the code in order to accommodate the potentiometer data. In order to make the hand of the gauge turn in synch with the actual potentiometer, TWO_PI and 0 had to be switched in the map “float p = map(myNum, 0, 255, TWO_PI, 0) - HALF_PI;”.
+
+## Processing to CircuitPython
+
+### Resources
+https://processing.org/examples/constrain.html
+
+https://www.rapidtables.com/web/color/RGB_Color.html 
+
+https://processing.org/reference/line_.html
+
+https://processing.org/reference/text_.html 
+
+https://processing.org/reference/textSize_.html
+
+https://processing.org/reference/map_.html
+
+https://processing.org/examples/constrain.html
+
+https://learn.adafruit.com/circuitpython-essentials/circuitpython-servo
+
+### Images
+<img src="Media/Processing2CircuitPy.PNG" width="500">
+
+### Takeaways
+
 
 ## Assignment Template
 
