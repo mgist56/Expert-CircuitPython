@@ -1,4 +1,4 @@
-# Expert-CircuitPython
+# ExpertCircuitPy
 Meg Expert CircuitPython
 
 https://github.com/chssigma/Markdown_Cheatsheet
