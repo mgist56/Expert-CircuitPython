@@ -6,6 +6,7 @@ Serial myPort = new Serial(this, Serial.list()[2], 9600);
 int cx, cy;
 float potRadius;
 float diameter;
+// Diameter for the gauge background
 
 void setup() {
   size(500, 500);
@@ -16,31 +17,33 @@ void setup() {
 
   cx = width / 2;
   cy = height / 2;
+  // Keeps the center centered
 }
 void draw() {
-  if (myPort.available() > 0) 
+  if (myPort.available() > 0)
   { 
     int myNum = myPort.read();
+    // Data from UART port connected to potentiometer
     println(myNum);
    
-    // Draw window background
     background(118, 71, 249);
+    // Draw window background
+    // Nice purple color cause why not
     
-    // Draw the clock background
     fill(80);
     noStroke();
     ellipse(cx, cy, diameter, diameter);
+    // Draw the gauge background
 
-    // Angles for sin() and cos() start at 3 o'clock;
-    // subtract HALF_PI to make them start at the top
     float p = map(myNum, 0, 255, TWO_PI, 0) - HALF_PI;
+    // Map to TWO_PI, 0 to make gauge go clockwise
+    // Subtract HALF_PI to make them start at the top
     
-    // Draw the hands of the clock
     stroke(255);
     strokeWeight(2);
     line(cx, cy, cx + cos(p) * potRadius, cy + sin(p) * potRadius);
+    // Draw the hand of the gauge
     
-    // Draw the minute ticks
     strokeWeight(5);
     beginShape(POINTS);
     for (int a = 0; a < 360; a+=6) {
@@ -49,6 +52,7 @@ void draw() {
       float y = cy + sin(angle) * potRadius;
       vertex(x, y);
     }
+    // Draw the ticks of the gauge
     endShape();
   }
 }
