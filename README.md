@@ -34,11 +34,9 @@ https://processing.org/reference/map_.html
 In this assignment, we modified the Clock code from the Example page of Processing. We removed two of the clock hands and changed the time-keeping aspect of the code in order to accommodate the potentiometer data. In order to make the hand of the gauge turn in synch with the actual potentiometer, TWO_PI and 0 had to be switched in the map “float p = map(myNum, 0, 255, TWO_PI, 0) - HALF_PI;”.
 
 ## Processing to CircuitPython
-
+Third Expert CircuitPy assignment; making two servos move based on Processing data.
 ### Resources
 https://processing.org/examples/constrain.html
-
-https://www.rapidtables.com/web/color/RGB_Color.html 
 
 https://processing.org/reference/line_.html
 
@@ -48,15 +46,13 @@ https://processing.org/reference/textSize_.html
 
 https://processing.org/reference/map_.html
 
-https://processing.org/examples/constrain.html
-
 https://learn.adafruit.com/circuitpython-essentials/circuitpython-servo
 
 ### Images
 <img src="Media/Processing2CircuitPy.PNG" width="500">
 
 ### Takeaways
-
+For the Processing portion of this assignment, we modified the Constrain example code from processing.org to draw a grid and we used the map() funcation to display the coordinates of the mouse in terms of 0(degrees) to 180(degrees). Then we took this data and converted it to a string so that it could be utilized by the UART. For the CircuitPython portion, the data from Processing had to be decoded and then split. From there, we simply took the respective arrays and set the servo angles to those numbers. In Processing, hit ctrl + / in order to comment out a line of code quickly. 
 
 ## Assignment Template
 
